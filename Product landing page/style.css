@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color:black ;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+#brand{
+    font-size: 2rem;
+    color: bisque;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    
+}
+nav ul li{
+    cursor: pointer;
+    font-weight: 500;
+    padding: 3px 35px;
+    color: bisque;
+    font-size: 1.1rem;
+}
+nav ul li:hover{
+    background-color: coral;
+    border-radius: 6px;
+    text-decoration: underline;
+}
+nav .cta{
+    color: bisque;
+    border: none;
+    background-color: rgb(84, 32, 5);
+    padding: 6px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav .cta:hover{
+    background-color: coral;
+    text-decoration: underline;
+}
+.the-menu{
+    display: none;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+img{
+    margin-top: 50px;
+    width: 700px;
+    
+}
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: bisque;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(235, 174, 101);
+    text-decoration: underline;
+}
+section p{
+    color: #b3780c;
+}
+section button{
+    color: bisque;
+    border: none;
+    background-color: rgb(102, 44, 5);
+    padding: 6px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+section button:hover{
+    text-decoration: underline;
+    background-color: coral;
+}
+button span{
+    font-size: 1rem;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 2px 5px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    width: 30%;
+    cursor: pointer;
+}
+
+#services .box img{ 
+   height: 180px;
+   margin: auto;
+   display: block;
+   width: 90%;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+#services .box h2{
+    cursor: pointer;
+}
+footer{
+    background: rgb(198, 178, 178);
+    color: rgb(121, 68, 7);
+    text-align: center;
+    
+    text-align: end;
+}
+.center{
+    text-align: center;
+}
+@media screen and (max-width: 700px) {
+    nav ul, nav button{
+        display: none;
+    }
+    .the-menu{
+        display: block;
+        cursor: pointer;
+        color: bisque;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        text-align: center;
+    }
+    #brand{text-align: center;
+
+    }
+    img{
+        width: 300px;
+    }
+    .mobile-menu:hover{
+        text-decoration: underline;
+    
+    border-radius: 5px;
+    }
+    #services{
+        flex-direction: column;
+    }
+    
+    #services .box { 
+        padding: 14px;
+        margin: 2px 0px; 
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+
+
+
